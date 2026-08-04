@@ -7,6 +7,7 @@
   <style>
     body {
       background-color: #f7f7f7;
+      margin-bottom: 80px; /* 为底部链接留出空间 */
     }
 
     .center {
@@ -24,18 +25,43 @@
     p {
       padding: 1%
     }
+    
+    .subtle-links {
+      position: fixed;
+      bottom: 50px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+    }
+    
+    .subtle-links a {
+      color: #b0b0b0;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s;
+      text-transform: uppercase;
+    }
+    
+    .subtle-links a:hover {
+      color: #666666;
+    }
   </style>
-
-
-
 </head>
 
 <body>
-
   <div class="center">
     <p id="now"></p>
     <p id="pass"></p>
     <p id="pass2"></p>
+  </div>
+  
+  <div class="subtle-links">
+    <a href="bird/index.html">BIRD</a>
+    <a href="english/index.html">ENGLISH</a>
+    <a href="jp2024/index.html">JP2024</a>
+    <a href="todo/index.html">TODO</a>
+    <a href="stocks/index.html">STOCKS</a>
   </div>
 
   <script>
